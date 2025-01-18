@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+    scroll-behavior: smooth;
+    color: white;
+
+
+}
+
+.a-ban {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(#e3b835cc,rgba(5, 23, 33, 0.5)),url("../images/contact\ bn.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* opacity: 0.7; */
+}
+
+.about h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+}
+
+
+.col{
+    padding-top: 50px;
+    
+}
+
+
+.col h2{
+    font-size: 40px;
+    color: #e2c663;
+    text-align: center;
+
+}
+
+.col p{
+    text-align: justify;
+    padding: 30px;
+    color: #9e9b97;
+    margin-left: 20px;
+}
+
+.col img{
+    margin-left: 150px;
+}
+
+.br-img{
+   width: 200px;
+   border:2px solid #e2c663
+}
+
+
+.br video{
+    width: 350px;
+    margin-left: 50px;
+   
+
+}
+
+/* -------------------------- */
+
+.team h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 50px;
+    
+}
+
+.team-img-br{
+    width: 410px;
+    height: 370px;
+    border: 3px solid #e2c663;
+    border-radius: 30px;
+    margin-left: 50px;
+
+}
+
+.team-img-1{
+    width: 400px;
+    height: 380px;
+    background: url("../images/about-ammarah.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.t-col h3{
+    color: #e2c663;
+    font-size: 30px;
+    text-align:center;
+    margin-top: 50px;
+    margin-left: -130px;
+}
+
+.t-col p{
+    color: #9e9b97;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -50px;
+}
+
+.team-img-2{
+    width: 400px;
+    height: 380px;
+    background: url("../images/nayab.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.team-img-3{
+    width: 400px;
+    height: 380px;
+    background: url("../images/about-ayesha.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.team-img-4{
+    width: 400px;
+    height: 380px;
+    background: url("../images/about-laiba.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}

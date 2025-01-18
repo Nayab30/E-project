@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+
+}
+
+nav{
+    width: 100%;
+    height: 110px;
+    background-color:rgba(0, 0, 0, 0.936);
+    /* background-color: black; */
+
+z-index: 2;
+padding-left: 80px;
+    position: fixed;
+display: flex;
+text-align: center;
+justify-content: center;
+/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+
+nav ul{
+    display: flex;
+    padding: 40px;
+    list-style-type: none;
+
+}
+
+nav ul li a{
+    margin-right: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #e2c663;
+    text-shadow:2px 1px wheat;
+}
+
+.register-btn{
+    padding-top: 20px;
+   
+}
+
+.register-btn button{
+    background-color:#e2c663;
+    color:black;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  transition-duration: 0.8s;
+
+    cursor: pointer;
+}
+
+.register-btn button:hover{
+  box-shadow: 0 0 25px #e2c663, 0 0 50px #000000, 0 0 50px #e2c663;
+
+}
+.register-btn button a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.8s linear infinite both;
+	        animation: vibrate-1 0.8s linear infinite both;
+}
+
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+
+/* --------------Webkit scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(61, 61, 61); 
+}
+
+::-webkit-scrollbar-thumb {
+    background:#e2c663; 
+    border-radius: 10px;
+    border: 5px solid rgb(75, 74, 74);
+    
+}
