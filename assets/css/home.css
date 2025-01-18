@@ -40,17 +40,17 @@
     align-items:center;
     padding-top: 25px;
     padding-left: 100px;
-    padding-top: 200px;
+    padding-top: 240px;
 }
 .content h1{
-    font-size: 3rem;
+    font-size: 60px;
     font-weight: 500;
     text-shadow: 2px 2px #e2c663;
 }
 
 .content p{
     width: 30rem;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 .tracking-in-contract {
 	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -170,7 +170,7 @@ text-shadow: 0 0 20px #e2c663, 0 0 30px #e2c663, 0 0 40px #e2c663;
 
 }
 .bn2-b p{
-    font-size: 1.5rem;
+    font-size: 16px;
     font-weight: 600;
     color: rgb(139, 135, 135);
 }
@@ -447,7 +447,7 @@ text-align: center;
     html{
         font-size: 75%;
     }
-    .bn2-b{
+    .bn4-b{
         display: none;
     }
 }
