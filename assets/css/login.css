@@ -195,3 +195,39 @@ button:hover{
     }
   }
   
+  @media(max-width:600px){
+    .register{
+        margin-left: 10px;
+    }
+    .top{
+        padding-left: 10px;
+        padding-top: 110px;
+    }
+    form{
+        padding-left: 10px;
+    }
+    input{
+        width: 400px;
+        height: 50px;
+    }
+    .pass{
+        margin-left: 270px;
+       
+    }
+    button{
+        padding-right: 150px;
+        padding-left: 170px;
+    }
+
+    .bn4-b-br{
+        width: 320px;
+        height: 450px;
+        margin-left: 50px;
+    }
+
+    .bn4-b-img{
+        width: 300px;
+        height: 450px;
+  }
+  
+  }
