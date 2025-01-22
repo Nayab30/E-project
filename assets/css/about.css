@@ -145,3 +145,46 @@
     margin-left: 30px;
     margin-top: 20px;
 }
+
+@media(max-width:900px){
+    html{
+        font-size: 75%;
+    }
+    .a-ban{
+        height: 500px;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    .none{
+        display: none;
+    }
+    .team-img-br{
+        width: 330px;
+        height: 280px;
+    }
+    .team-img-1{
+        width: 340px;
+        height: 280px;
+    }
+    .team-img-2{
+        width: 340px;
+        height: 280px;
+    }
+    .team-img-3{
+        width: 340px;
+        height: 280px;
+    }
+    .team-img-4{
+        width: 340px;
+        height: 280px;
+    }
+    .t-col h3{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .t-col p{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+}

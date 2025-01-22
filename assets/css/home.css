@@ -143,12 +143,14 @@ transform: scale(1.8);
 .counter{
     font-size: 3rem;
     color: #e2c663;
-text-shadow: 0 0 20px #e2c663, 0 0 30px #e2c663, 0 0 40px #e2c663;
+text-shadow: 0 0 20px #e2c663, 0 0 30px #e2c663
 
 }
 .section-work-data p{
     font-size: 1rem;
     margin: 20px;
+   
+    
 }
 
 
@@ -442,12 +444,131 @@ text-align: center;
     padding: 20px;
 }
 
+@media(max-width:940px){
+    .bn4-b{
+        display: none;
+    }
+.none{
+    display: none;
+}
+    .bn4-a{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .bn4-a h1{
+        font-size: 40px;
+        width: 280px;
+    }
+    .bn4-a h2{
+        font-size: 18px;
+        width: 280px;
+    }
+}
+
+
 
 @media(max-width:600px) {
     html{
         font-size: 75%;
     }
+    .banner{
+        width: 100%;
+        height: 650px;
+    }
+    .banner p{
+        font-size: 14px;
+        margin-left: 10px;
+        padding-right: 130px;
+    }
+    .content{
+        margin-left: -50px;
+        width: 90%;
+        padding-right: 10px;
+    }
+    .content h1{
+        font-size: 40px;
+        margin-left: 10px;
+    }
+    .login-btn{
+        width: 100%;
+        padding: 10px;
+       
+    }
+    .bn2-a{
+        display: none;
+    }
     .bn4-b{
         display: none;
     }
+    .v-img img{
+        width: 260px;
+        height: 300px;
+        padding-left: 20px;
+        margin-left: 40px;
+    }
+    .v-img h3{
+        margin:10px
+    }
+    .counter{
+        text-shadow: none;
+        font-size: 30px;
+        margin-top:20px;
+        margin-left: 10px;
+        
+    }
+    .bn4-a{
+        margin-top: 100px;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .bn4-a h1{
+        font-size: 40px;
+        width: 280px;
+    }
+    .bn4-a h2{
+        font-size: 18px;
+        width: 280px;
+    }
+    .bullet{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .bn4-a p{
+        margin-left: 60px;
+        width: 280px;
+        
+    }
+
+    .example-image-link .g{
+        width: 200px;
+        height: 300px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .example-image-link .none{
+        display: none;
+    }
+
+    .video video{
+        
+        width: 250px;
+    }
+    .why-ch-i {
+        margin-left: 200px;
+    }
+
 }
+
+@media(max-width:400px){
+    .why-ch-i {
+        margin-left: 120px;
+    }
+}
+

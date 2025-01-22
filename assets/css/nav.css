@@ -44,6 +44,11 @@ nav ul li a:hover{
     text-shadow:2px 1px wheat;
 }
 
+.logo{
+  margin-right: 100px;
+  margin-left: -100px;
+}
+
 .register-btn{
     padding-top: 20px;
    
@@ -148,4 +153,81 @@ nav ul li a:hover{
     border-radius: 10px;
     border: 5px solid rgb(75, 74, 74);
     
+}
+
+
+
+
+@media(max-width:940px){
+  
+    nav ul{
+      position: fixed;
+      top: 110px;
+      left: 0%;
+      background:black;
+      height: 30px;
+      width: 100vw;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-left: -10px;
+      padding-right: 30px;
+    }
+    
+    nav ul li{
+      margin-top: -10px;
+
+    }
+    
+    nav ul li a{
+      font-size: 14px;
+      
+    }
+    .logo{
+      margin-left: -80px;
+    }
+    .register-btn{
+      margin-left: 50px;
+      
+    }
+    .register-btn button{
+      padding: 10px;
+      margin-right: 10px;
+    }
+   .register-btn button a{
+      font-size: 14px;
+      font-weight: 600;
+      
+    }
+}
+
+@media(max-width:468px){
+  
+    nav ul{
+      position: fixed;
+      top: 110px;
+      left: 0%;
+      background: black;
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+    
+      padding-right: 50px;
+    }
+    
+    nav ul li{
+      margin-top: -10px;
+}
+nav ul li a{
+  font-size: 10px;
+  
+}
+.register-btn{
+  margin-left: 30px;
+  
+}
+.register-btn button{
+  padding: 10px;
+  margin-left: -90px;
+}
 }

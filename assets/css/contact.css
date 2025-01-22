@@ -134,3 +134,20 @@ color: black;
     margin-left: 130px;
     background-color: #9a6310;
 }
+
+@media(max-width:600px){
+    html{
+        font-size: 75%;
+    }
+
+    .c-ban{
+        height: 450px;
+    }
+    .contact h1{
+        font-size: 40px;
+    }
+    .c-line{
+        margin: 10px;
+        margin-left: 50px;
+    }
+}
