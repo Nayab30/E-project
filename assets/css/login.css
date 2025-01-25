@@ -1,6 +1,4 @@
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -15,7 +13,6 @@
    
 
 }
-
 .pass{
     margin-left: 360px;
     margin-top: 50px;
@@ -125,11 +122,11 @@ button:hover{
 }
 
 .error-message{
-    color: red;
-    font-size: 15px;
-    padding-top: 10px;
+    color: #dfdedb;
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 15px;
 }
-
 /* ------------ animation ----------*/
 
 .shake-vertical {
@@ -195,13 +192,13 @@ button:hover{
     }
   }
   
-  @media(max-width:600px){
+  @media(max-width:576px){
     .register{
         margin-left: 10px;
     }
     .top{
         padding-left: 10px;
-        padding-top: 110px;
+        padding-top: 70px;
     }
     form{
         padding-left: 10px;
@@ -209,20 +206,22 @@ button:hover{
     input{
         width: 400px;
         height: 50px;
+        font-size: 16px;
     }
     .pass{
-        margin-left: 270px;
+        font-size: 25px;
+        margin-left: 260px;
        
     }
     button{
-        padding-right: 150px;
+        padding-right: 160px;
         padding-left: 170px;
     }
 
     .bn4-b-br{
         width: 320px;
         height: 450px;
-        margin-left: 50px;
+        margin-left: 80px;
     }
 
     .bn4-b-img{

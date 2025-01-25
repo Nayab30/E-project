@@ -26,18 +26,21 @@
             style="margin-top: -13px"
           />
         </a>
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
+        <i id="menu-icon" class='bx bx-menu'></i>
+        <ul class="menu">
+          <li><a href="/">HOME</a></li>
           <li><a href="./about.html">ABOUT</a></li>
           <li><a href="./gallery.html">GALLERY</a></li>
         
-          <li><a href="#">SERVICES</a></li>
+          <li><a href="./service.html">SERVICES</a></li>
           <li><a href="./contact.html">CONTACT</a></li>
           <li><a href="./login.html">LOGIN</a></li>
-        </ul>
-        <div class="register-btn">
+        <li>
+        <div class="register-btn menu">
           <button class="vibrate-1"><a href="./register.html">REGISTER NOW</a></button>
         </div>
+      </li>
+      </ul>
       </nav>
       <div class="c-ban">
         <!-- <img src="./assets/images/contact bn.png" alt="" /> -->
@@ -89,10 +92,10 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-md-my-2 col">
             <h3>Drop Us a line</h3>
-            <form>
+            <form class="form" onsubmit="return validateform()">
               <p>
                 <label for="name">Name:</label><br />
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name"  autocomplete="off"/>
                 <span id="name-error" class="error-message"></span>
               </p>
 
@@ -103,9 +106,9 @@
               </p>
 
               <p>
-                <label for="contact">Contact Number:</label><br />
-                <input type="text" id="contact" name="contact" />
-                <span id="contact-error" class="error-message"></span>
+                <label for="number">Contact Number:</label><br />
+                <input type="text" id="number" name="number" />
+                <span id="number-error" class="error-message"></span>
               </p>
 
               <p>
@@ -116,15 +119,15 @@
 
               <p>
                 <label for="message">Message:</label><br />
-                <textarea name="message" cols="20" rows="3"></textarea>
+                <textarea name="message" id="message" cols="20" rows="3"></textarea>
                 <span id="message-error" class="error-message"></span>
               </p>
 
               <p>
                 <button
-                  onclick="fun()"
                   style="margin-left: 140px; border-radius: 10px"
                   type="submit"
+                  id="submit"
                 >
                   Submit
                 </button>
@@ -271,10 +274,61 @@
       });
     </script>
 
-    <script>
-      function fun() {
-        alert("Succussfully submit");
-      }
-    </script>
+    
+<!-- ---------------------- -->
+
+<script src="./assets/JS/contact.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  $(document).ready (function(){
+    $("#submit").click(function(){
+      var name = $("#name").val();
+      var number = $("#number").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val();
+      var message = $("#message").val();
+  
+      if(name == "" || email =="" || number ==""  || subject =="" || message =="" ){
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'All Fields Are Required!'
+          
+        });
+  
+          }else
+            Swal.fire({
+            position: 'center',
+            icon:'success',
+            title: 'Thank You For Succussfully submit!'
+        
+          });
+    });
+  
+  })
+</script>
+
+
+
+
+
+
+        <!-- ---- navbar jQuery -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+        <script>
+          $(document).ready(function(){
+            $("#menu-icon").click(function(){
+              $(".menu").slideToggle()
+            })
+          })
+        </script>
+    
   </body>
 </html>

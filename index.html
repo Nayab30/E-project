@@ -43,20 +43,21 @@
             style="margin-top: -13px"
           />
         </a>
-        
-        <ul>
+        <i id="menu-icon" class='bx bx-menu'></i>
+        <ul class="menu">
           <li><a href="/">HOME</a></li>
           <li><a href="./about.html">ABOUT</a></li>
           <li><a href="./gallery.html">GALLERY</a></li>
         
-          <li><a href="#">SERVICES</a></li>
+          <li><a href="./service.html">SERVICES</a></li>
           <li><a href="./contact.html">CONTACT</a></li>
           <li><a href="./login.html">LOGIN</a></li>
-        </ul>
-        <div class="register-btn">
+        <li>
+        <div class="register-btn menu">
           <button class="vibrate-1"><a href="./register.html">REGISTER NOW</a></button>
         </div>
-        
+      </li>
+      </ul>
       </nav>
       <section class="container-fluid banner">
        
@@ -539,11 +540,24 @@
     <script>
       jQuery(document).ready(function($){
         $('.counter').counterUp({
-          delay: 10,
+          delay: 30,
           time: 3000
       });
       });
     </script>
+
+    <!-- ---- navbar jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#menu-icon").click(function(){
+          $(".menu").slideToggle()
+        })
+      })
+    </script>
+
 
   </body>
 </html>

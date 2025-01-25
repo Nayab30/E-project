@@ -50,14 +50,24 @@ nav ul li a:hover{
 }
 
 .register-btn{
-    padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+    margin-top: -10px;
    
 }
 
+.register-btn button a{
+  color: black;
+}
+
+.register-btn button a:hover{
+  color:black
+}
 .register-btn button{
     background-color:#e2c663;
     color:black;
-    font-weight: 600;
+    font-weight: 800;
+    
     font-size: 18px;
     border: none;
     padding: 15px;
@@ -156,78 +166,81 @@ nav ul li a:hover{
 }
 
 
-
-
-@media(max-width:940px){
-  
-    nav ul{
-      position: fixed;
-      top: 110px;
-      left: 0%;
-      background:black;
-      height: 30px;
-      width: 100vw;
-      text-align: center;
-      transition: all 0.3s ease;
-      margin-left: -10px;
-      padding-right: 30px;
-    }
-    
-    nav ul li{
-      margin-top: -10px;
-
-    }
-    
-    nav ul li a{
-      font-size: 14px;
-      
-    }
-    .logo{
-      margin-left: -80px;
-    }
-    .register-btn{
-      margin-left: 50px;
-      
-    }
-    .register-btn button{
-      padding: 10px;
-      margin-right: 10px;
-    }
-   .register-btn button a{
-      font-size: 14px;
-      font-weight: 600;
-      
-    }
+#menu-icon{
+  display: none;
 }
 
-@media(max-width:468px){
+
+@media(max-width:992px){
+  .menu{
+    display: none;
+  }
+
+  #menu-icon{
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    font-size: 40px;
+    color: #e2c663;
+    cursor: pointer;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 110px;
+    left: 0%;
+    background: black;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
   
-    nav ul{
-      position: fixed;
-      top: 110px;
-      left: 0%;
-      background: black;
-      height: 30px;
-      width: 100%;
-      text-align: center;
-      transition: all 0.3s ease;
-    
-      padding-right: 50px;
-    }
-    
-    nav ul li{
-      margin-top: -10px;
+    padding-right: 50px;
+  }
+  
+  nav ul li{
+    margin: 20px;
+    margin-top: -10px;
 }
 nav ul li a{
-  font-size: 10px;
-  
+  margin: 10px;
+  padding: 10px;
+font-size: 16px;
+
 }
+
 .register-btn{
-  margin-left: 30px;
+  
+  margin-left: 40px;
   
 }
 .register-btn button{
   padding: 10px;
-  margin-left: -90px;
+margin-top: 20px;
+  margin-left: -40px;
 }
+
+
+
+.logo{ 
+  /* margin-top: 10px; */
+  margin-left: -470px;
+}
+} 
+
+@media(max-width:768px){
+  .logo{ 
+    margin-left: -350px;
+  }
+}
+
+@media(max-width:576px){
+  .logo{ 
+    margin-left: -300px;
+  }
+
+  #menu-icon{
+    right: 40px;
+  }
 }

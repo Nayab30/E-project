@@ -24,28 +24,31 @@
 <body style="background-color: black">
 
     <header>
-        <nav>
-          <a href="#" class="logo">
-            <img
-              src="./assets/images/logo.png"
-              alt="Wedding Planner Logo"
-              width="150"
-              style="margin-top: -13px"
-            />
-          </a>
-            <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="./about.html">ABOUT</a></li>
-              <li><a href="./gallery.html">GALLERY</a></li>
-           
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="./contact.html">CONTACT</a></li>
-              <li><a href="./login.html">LOGIN</a></li>
-            </ul>
-            <div class="register-btn">
-              <button class="vibrate-1"><a href="./register.html">REGISTER NOW</a></button>
-            </div>
-          </nav>
+      <nav>
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Wedding Planner Logo"
+            width="150"
+            style="margin-top: -13px"
+          />
+        </a>
+        <i id="menu-icon" class='bx bx-menu'></i>
+        <ul class="menu">
+          <li><a href="/">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+        
+          <li><a href="./service.html">SERVICES</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./login.html">LOGIN</a></li>
+        <li>
+        <div class="register-btn menu">
+          <button class="vibrate-1"><a href="./register.html">REGISTER NOW</a></button>
+        </div>
+      </li>
+      </ul>
+      </nav>
 
           <div class="a-ban">
             <!-- <img src="./assets/images/contact bn.png" alt="" /> -->
@@ -229,7 +232,7 @@
 
     <!-- ------------------------------------------ -->
 
-
+<!-- ---- Aos animation  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init(
@@ -239,6 +242,20 @@
       }
     );
   </script>
+
+
+      <!-- ---- navbar jQuery -->
+
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+      <script>
+        $(document).ready(function(){
+          $("#menu-icon").click(function(){
+            $(".menu").slideToggle()
+          })
+        })
+      </script>
+  
 
     
 </body>

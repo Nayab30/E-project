@@ -96,15 +96,15 @@
     font-weight: 800;
 }
 
-@media(max-width:600px){
+@media(max-width:992px){
     .g-parallex h2{
         font-size: 40px;
     }
-    .example-image-link {
+    .example-image-link img {
         width: 100%;
-        height: auto;
+        height: 300px;
         display: block;
-        margin-bottom: 10px;
+        margin: 10px;
         overflow: hidden;
     }
     .g-ban{
